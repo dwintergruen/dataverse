@@ -19,6 +19,7 @@ import edu.harvard.iq.dataverse.authorization.providers.oauth2.OAuth2Authenticat
 import edu.harvard.iq.dataverse.authorization.providers.oauth2.impl.GitHubOAuth2AP;
 import edu.harvard.iq.dataverse.authorization.providers.oauth2.impl.GoogleOAuth2AP;
 import edu.harvard.iq.dataverse.authorization.providers.oauth2.impl.OrcidOAuth2AP;
+import edu.harvard.iq.dataverse.authorization.providers.oauth2.impl.MitreIDOAuth2AP;
 import edu.harvard.iq.dataverse.authorization.providers.shib.ShibAuthenticationProvider;
 import edu.harvard.iq.dataverse.authorization.providers.shib.ShibAuthenticationProviderFactory;
 import edu.harvard.iq.dataverse.authorization.users.ApiToken;
@@ -837,6 +838,7 @@ public class AuthenticationServiceBean {
                 ShibAuthenticationProvider.PROVIDER_ID,
                 OrcidOAuth2AP.PROVIDER_ID_PRODUCTION,
                 OrcidOAuth2AP.PROVIDER_ID_SANDBOX,
+                MitreIDOAuth2AP.PROVIDER_ID,
                 github.getId(),
                 google.getId()
         );
